@@ -1,41 +1,91 @@
-# Python cache
+# -----------------------------
+# Python
+# -----------------------------
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
+*.pyd
 
+# -----------------------------
 # Virtual environments
-.venv/
+# -----------------------------
 venv/
+.venv/
 env/
+ENV/
 
+# -----------------------------
 # Environment variables (SECRETS)
+# -----------------------------
 .env
+.env.*
 
-# Python packaging
+# -----------------------------
+# Python build / packaging
+# -----------------------------
 build/
 dist/
 *.egg-info/
 .eggs/
+pip-wheel-metadata/
 
+# -----------------------------
 # Logs
+# -----------------------------
 *.log
 
-# Streamlit cache
+# -----------------------------
+# Streamlit
+# -----------------------------
 .streamlit/
 
-# OS files
+# -----------------------------
+# OS generated files
+# -----------------------------
 .DS_Store
 Thumbs.db
 
-# IDE files
+# -----------------------------
+# IDE / Editors
+# -----------------------------
 .vscode/
 .idea/
 
-# Jupyter
+# -----------------------------
+# Jupyter notebooks
+# -----------------------------
 .ipynb_checkpoints/
 
-# Terraform (if you add later)
+# -----------------------------
+# Terraform
+# -----------------------------
 .terraform/
 *.tfstate
 *.tfstate.*
 terraform.tfvars
+terraform.tfvars.json
+crash.log
+
+# -----------------------------
+# Docker
+# -----------------------------
+docker-compose.override.yml
+
+# -----------------------------
+# Node (if frontend grows later)
+# -----------------------------
+node_modules/
+
+# -----------------------------
+# Test / coverage
+# -----------------------------
+.coverage
+htmlcov/
+.pytest_cache/
+
+# -----------------------------
+# Misc
+# -----------------------------
+*.swp
+*.swo
