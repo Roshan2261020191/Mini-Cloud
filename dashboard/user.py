@@ -59,7 +59,8 @@ def user_login():
     with tab2:
         with st.form("existing_user_form_1"):
             user_id_input = st.text_input("Enter your unique ID")
-
+            
+            #THIS is the line that sends user input to Supabase:
             if st.form_submit_button("Login"):
                 if user_id_input.strip():
                     existing = supabase.table("users") \
